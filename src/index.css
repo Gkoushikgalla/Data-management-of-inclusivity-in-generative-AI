@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes progress {
+    0% { width: 0%; }
+    100% { width: 100%; }
+  }
+  
+  .animate-progress {
+    animation: progress 2.5s ease-in-out infinite;
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Transition styles */
+.transition-all {
+  transition-duration: 300ms;
+}
+
+/* Typography scales */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+p, li {
+  line-height: 1.5;
+}
